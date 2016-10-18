@@ -2,6 +2,7 @@ package com.expense.user.servlet;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import javax.servlet.ServletException;
@@ -37,14 +38,14 @@ public class UserServlet extends HttpServlet {
 	}
 
 	private Map<String, Map<String, String>> getUserData() {
-		Map<String, String> map = new HashMap<String, String>();
+		Map<String, String> map = new LinkedHashMap<String, String>(10);
 		map.put("binay", 	"Binay Mishra");
 		map.put("amit",  	"Amit Kumar");
 		map.put("pravat", 	"Pravat Ranjan Mohanta");
 		map.put("prithavi",	"Prithaviraj Mishra");
 		map.put("sushant",	"Sushant Kumar Dash");
 
-		Map<String, Map<String, String>> users = new HashMap<String, Map<String, String>>();
+		Map<String, Map<String, String>> users = new HashMap<String, Map<String, String>>(1);
 		users.put("users", map);
 		return users;
 	}
