@@ -5,6 +5,7 @@
 	<artifactId>expense-users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
+		<jackson-databind-version>2.4.1</jackson-databind-version>
 		<tomcat.version>8.0.28</tomcat.version>
 		<java.version>1.8</java.version>
 	</properties>
@@ -38,6 +39,11 @@
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-jsp-api</artifactId>
 			<version>${tomcat.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson-databind-version}</version>
 		</dependency>
 	</dependencies>
 	<build>
