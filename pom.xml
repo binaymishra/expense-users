@@ -51,7 +51,7 @@
 					<assembleDirectory>target</assembleDirectory>
 					<programs>
 						<program>
-							<mainClass>launch.Main</mainClass>
+							<mainClass>com.expense.user.Main</mainClass>
 							<name>webapp</name>
 						</program>
 					</programs>
