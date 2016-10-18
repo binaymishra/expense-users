@@ -1,0 +1,5 @@
+/target/
+/.settings/
+/tomcat.8080/
+/.classpath
+/.project
